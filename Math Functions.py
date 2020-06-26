@@ -49,18 +49,3 @@ class NT():
 		return factors
 
 
-
-
-def main():
-
-	sum = 0
-	for i in range(1,13):
-		sum += Combo.nCr(11, i-1) * Combo.nCr(12, i)
-	ans = 0
-	for s in NT.primeFactors(sum):		
-		ans += s[0]
-
-	print('The sum of the prime numbers is', ans)
-
-
-main()
